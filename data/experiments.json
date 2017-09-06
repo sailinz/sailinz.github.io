@@ -1,40 +1,91 @@
 {
     "experiments": [
-        { 
-            "technique": "AUTOCOMPASTE", 
+        {
+            "technique": "AUTOCOMPASTE",
             "granularity": "sentence",
-            "data_file": "data/texts.json",
-            "stimuli": "What is acceptor atoms?" 
+            "articles":"single",
+            "data_file": "data/text1.json",
+            "stimuli": "What is acceptor atoms?"
         },
-        { 
-            "technique": "AUTOCOMPASTE", 
+        {
+            "technique": "AUTOCOMPASTE",
             "granularity": "paragraph",
-            "data_file": "data/texts.json",
-            "stimuli": "What is AC coupling? Circuit that passes an AC signal while blocking a DC voltage." 
+            "articles":"single",
+            "data_file": "data/text1.json",
+            "stimuli": "What is AC coupling? Circuit that passes an AC signal while blocking a DC voltage."
         },
-        { 
-            "technique": "AUTOCOMPASTE", 
+        {
+            "technique": "AUTOCOMPASTE",
             "granularity": "phrase",
-            "data_file": "data/texts.json",
-            "stimuli": "number of positive charges" 
+            "articles":"single",
+            "data_file": "data/text2.json",
+            "stimuli": "number of positive charges"
         },
-        { 
-            "technique": "TRADITIONAL", 
+
+        {
+            "technique": "AUTOCOMPASTE",
             "granularity": "sentence",
+            "articles":"multiple",
             "data_file": "data/texts.json",
-            "stimuli": "What is acceptor atoms?" 
+            "stimuli": "What is acceptor atoms?"
         },
-        { 
-            "technique": "TRADITIONAL", 
+        {
+            "technique": "AUTOCOMPASTE",
             "granularity": "paragraph",
+            "articles":"multiple",
             "data_file": "data/texts.json",
-            "stimuli": "What is AC coupling? Circuit that passes an AC signal while blocking a DC voltage." 
+            "stimuli": "What is AC coupling? Circuit that passes an AC signal while blocking a DC voltage."
         },
-        { 
-            "technique": "TRADITIONAL", 
+        {
+            "technique": "AUTOCOMPASTE",
             "granularity": "phrase",
+            "articles":"multiple",
             "data_file": "data/texts.json",
-            "stimuli": "number of positive charges" 
-        }        
+            "stimuli": "number of positive charges"
+        },
+
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"single",
+            "data_file": "data/text1.json",
+            "stimuli": "What is acceptor atoms?"
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "articles":"single",
+            "data_file": "data/text1.json",
+            "stimuli": "What is AC coupling? Circuit that passes an AC signal while blocking a DC voltage."
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "phrase",
+            "articles":"single",
+            "data_file": "data/text2.json",
+            "stimuli": "number of positive charges"
+        }
+
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"multiple",
+            "data_file": "data/texts.json",
+            "stimuli": "What is acceptor atoms?"
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "articles":"multiple",
+            "data_file": "data/texts.json",
+            "stimuli": "What is AC coupling? Circuit that passes an AC signal while blocking a DC voltage."
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "phrase",
+            "articles":"multiple",
+            "data_file": "data/texts.json",
+            "stimuli": "number of positive charges"
+        }
     ]
 }
