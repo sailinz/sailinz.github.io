@@ -64,7 +64,7 @@
             "articles":"single",
             "data_file": "data/text2.json",
             "stimuli": "number of positive charges"
-        }
+        },
 
         {
             "technique": "TRADITIONAL",
