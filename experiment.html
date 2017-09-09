@@ -46,8 +46,8 @@
                                 <td><span class="js-expt-granularity">Phrase</span></td>
                             </tr>
                             <tr>
-                                <td>Independent Variable 3</td>
-                                <td>???</td>
+                                <td>Quantity of Article Windows</td>
+                                <td><span class="js-expt-articles-trial"></span> </td>
                             </tr>
                             <tr>
                                 <td>Trial</td>
@@ -93,6 +93,7 @@
 
                     var technique = trialResult.technique;
                     var granularity = trialResult.granularity;
+                    var articles = trialResult.articles; //3rd independent variable
                     var trialNum = currentTrial;
                     var stimuli = trialResult.stimuli;
                     var userResponse = trialResult.user_response;
@@ -101,7 +102,7 @@
                     var trialDuration = trialResult.duration;
                     var accuracy = stimuli === userResponse ? 1 : 0;
 
-                    var row = [pid, technique, granularity, trialNum,
+                    var row = [pid, technique, granularity, articles, trialNum,
                                 stimuli, userResponse, trialStartTime,
                                 trialEndTime, trialDuration, accuracy];
                     trialData.push(row);
