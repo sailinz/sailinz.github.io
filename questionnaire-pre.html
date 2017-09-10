@@ -41,53 +41,208 @@
 
                     <form id="pre-expt-form">
                         <div class="form-group">
-                            <label for="q1">Question 1 - Text</label>
-                            <input type="text" class="form-control" id="q1" name="q1" placeholder="Enter answer">
+                            <label for="q1">Name *</label>
+                            <input type="text" class="form-control" id="q1" name="q1" placeholder="Enter your name" required="required">
                         </div>
                         <div class="form-group">
-                            <label for="q2">Question 2 - Radio</label>
+                            <label for="q2">Age *</label>
+                            <input type="text" class="form-control" id="q2" name="q2" placeholder="Enter your age. If you don't want to disclose your exact age, please provide the range such as 25-30." equired="required">
+                        </div>
+                        <div class="form-group">
+                            <label for="q3">Occupation *</label>
+                            <input type="text" class="form-control" id="q3" name="q3" placeholder="Enter your occupation." required="required">
+                        </div>
+                        <div class="form-group">
+                            <label for="q4">Gender *</label>
                             <div class="radio">
                               <label>
-                                <input type="radio" name="q2" id="optionsRadios1" value="radio1">
-                                Radio response 1
+                                <input type="radio" name="q4" id="optionsRadios1" value="radio1">
+                                Female
                               </label>
                             </div>
                             <div class="radio">
                               <label>
-                                <input type="radio" name="q2" id="optionsRadios2" value="radio2">
-                                Radio response 2
+                                <input type="radio" name="q4" id="optionsRadios2" value="radio2">
+                                Male
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q4" id="optionsRadios1" value="radio1">
+                                Not to disclose
                               </label>
                             </div>
                         </div>
+
                         <div class="form-group">
-                            <label for="q3">Question 3 - Checkbox</label>
+                            <label for="q5">Educational background *</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q5" id="optionsRadios1" value="radio1">
+                                Undergraduate/ Bachelor's degree
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q5" id="optionsRadios2" value="radio2">
+                                Master's degree
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q5" id="optionsRadios1" value="radio3">
+                                PhD degree
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q5" id="optionsRadios1" value="radio4">
+                                Junior college/ polytechnique/ high school and below
+                              </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="q6">How often do you use a computer? *</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="optionsRadios1" value="radio1">
+                                Never used before
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="optionsRadios2" value="radio2">
+                                Never used before
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="optionsRadios3" value="radio3">
+                                1 to 3 times a week
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="optionsRadios4" value="radio4">
+                                Daily less than 5 hours
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="optionsRadios5" value="radio5">
+                                Daily more than 5 hours
+                              </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="q7">How often do you need to copy and paste something when you use your computer during a day? *</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q7" id="optionsRadios1" value="radio1">
+                                Never
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q7" id="optionsRadios2" value="radio2">
+                                Less than 5 times
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q7" id="optionsRadios3" value="radio3">
+                                6 to 10 times
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q7" id="optionsRadios4" value="radio4">
+                                More than 10 times
+                              </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="q8">What operation system you usually use when you do copy and paste on a computer? *</label>
                             <div class="checkbox">
                               <label>
-                                <input type="checkbox" name="q3" value="checkbox1">
-                                Checkbox response 1
+                                <input type="checkbox" name="q8" value="checkbox1">
+                                Mac OS
                               </label>
                             </div>
                             <div class="checkbox">
                               <label>
-                                <input type="checkbox" name="q3" value="checkbox2">
-                                Checkbox response 2
+                                <input type="checkbox" name="q8" value="checkbox2">
+                                Windows
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" name="q8" value="checkbox3">
+                                Linux
                               </label>
                             </div>
                         </div>
+
                         <div class="form-group">
-                            <label for="q4">Question 4 - Select Options</label>
-                            <select class="form-control" name="q4">
-                                <option value="option1">Option response 1</option>
-                                <option value="option2">Option response 2</option>
-                                <option value="option3">Option response 3</option>
-                                <option value="option4">Option response 4</option>
-                                <option value="option1">Option response 5</option>
-                            </select>
+                            <label for="q7">How often do you copy and paste text of a alphabetic language (e.g. English, French, Thai, Vietnamese etc. as oppose to ideographic languages such as Chinese, Japanese, Korean etc.)? *</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q9" id="optionsRadios1" value="radio1">
+                                More than 70% of the text are of an alphabetic language
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q9" id="optionsRadios2" value="radio2">
+                                30% to 70% of the text are of an alphabetic language
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q9" id="optionsRadios3" value="radio3">
+                                Less than 30% of the text are of an alphabetic language
+                              </label>
+                            </div>
                         </div>
+
                         <div class="form-group">
-                            <label for="q5">Question 5 - Textarea</label>
-                            <textarea class="form-control" id="q5" name="q5" placeholder="Enter response"></textarea>
+                            <label for="q10">How do you usually copy and paste text on a computer? *</label>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" name="q10" value="checkbox1">
+                                Select the text. Then do Ctrl+C to copy and Ctrl+V to paste (or ⌘ Command instead of Ctrl for Mac users)
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" name="q10" value="checkbox2">
+                                Select the text. Then right click the dropdown menu “Copy” and click “Paste”
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" name="q10" value="checkbox3">
+                                Select the text to copy and right click to paste (for Linux users)
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" name="q10" value="checkbox4">
+                                Type in the full text that you want to copy
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" name="q10" value="checkbox5">
+                                Others:
+                                <input type="text" class="form-control" id="q10" name="q10" placeholder="Enter your method">
+                              </label>
+                            </div>
                         </div>
+
                         <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                     </form>
                 </div>

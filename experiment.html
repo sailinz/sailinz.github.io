@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     </head>
     <body class="experiment-page">
         <!--[if lt IE 8]>
@@ -46,7 +47,7 @@
                                 <td><span class="js-expt-granularity">Phrase</span></td>
                             </tr>
                             <tr>
-                                <td>Quantity of Article Windows</td>
+                                <td>No. of open windows</td>
                                 <td><span class="js-expt-articles"></span> </td>
                             </tr>
                             <tr>
@@ -55,9 +56,10 @@
                             </tr>
                         </tbody>
                     </table>
+                    <h3 id="expSession">Non-timed Trails</h3>
                     <p>Please copy-paste the following <span class="js-expt-granularity">phrase</span> using the <span class="js-expt-technique">AUTOCOMPASTE</span> technique from one of the open windows.</p>
                     <div id="stimuli" class="alert alert-danger js-expt-stimuli">This is a long stimuli!</div>
-                    <button class="btn btn-primary btn-lg" onclick="next()">Next Task</button>
+                    <button id="btnNext" class="btn btn-primary btn-lg" onclick="next()">Next Task</button>
                 </div>
                 <div id="autocompaste" class="col-sm-9">
                     <div id="autocompaste-display"></div>
@@ -65,7 +67,6 @@
             </div>
         </div>
 
-        <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/WindowManager.js"></script>
@@ -87,6 +88,11 @@
             var trialData = [];
             var pid;
 
+            var experimentDataB1 = ['data/P01-B1.json'];
+            var experimentDataB2 = ['data/P01-B2.json'];
+            var experimentType = ['Timed experiment - block 1', 'Timed experiment - block 2'];
+            var currentExperiment = 'data/experimentsTrial.json';
+
             function next () {
                 if (currentTrial !== 0) {
                     var trialResult = ACPToolKit.getCurrentTrialState();
@@ -101,26 +107,54 @@
                     var trialEndTime = trialResult.end_time;
                     var trialDuration = trialResult.duration;
                     var accuracy = stimuli === userResponse ? 1 : 0;
-
                     var row = [pid, technique, granularity, articles, trialNum,
                                 stimuli, userResponse, trialStartTime,
                                 trialEndTime, trialDuration, accuracy];
                     trialData.push(row);
                 }
 
+                //non-timed trial
+                if (currentTrial < totalNumberOfTrials) {
+                    ACPToolKit.presentTrial(trialsData[currentTrial]);
+                    currentTrial += 1;
+                    $('.js-expt-current-trial').text(currentTrial);
+                    if (currentTrial == (totalNumberOfTrials - 1)){
+                      var experimentBtn = document.getElementById(btnNext);
+                      experimentBtn.innerHTML = 'Start timed experiment';
+                    }
+                } else {
+                    // Last trial completed
+                    currentTrial = 0;
+                    currentExperiment = experimentDataB1[1]; //test participant 1
+                }
+
+                //real experiment - block 1
                 if (currentTrial < totalNumberOfTrials) {
                     ACPToolKit.presentTrial(trialsData[currentTrial]);
                     currentTrial += 1;
                     $('.js-expt-current-trial').text(currentTrial);
                 } else {
                     // Last trial completed
-                    ACPToolKit.downloadTrialResults(trialData);
+                    currentTrial = 0;
+                    currentExperiment = experimentDataB2[1]; //test participant 1
+                    ACPToolKit.downloadTrialResults(trialData, 'B1');
+
+                }
+
+                //real experiment - block 2
+                if (currentTrial < totalNumberOfTrials) {
+                    ACPToolKit.presentTrial(trialsData[currentTrial]);
+                    currentTrial += 1;
+                    $('.js-expt-current-trial').text(currentTrial);
+                } else {
+                    // Last trial completed
+                    ACPToolKit.downloadTrialResults(trialData, 'B2');
                     window.location = 'questionnaire-post.html';
                 }
             }
 
             $(document).ready(function () {
-                $.get('data/experiments.json', function (data) {
+                $.get(currentExperiment, function (data) {
                     trialsData = data.experiments;
                     currentTrial = 0;
                     totalNumberOfTrials = trialsData.length;
@@ -128,6 +162,8 @@
                     trialData.push(headers);
                     next();
                     pid = ACPToolKit.getCurrentParticipantId();
+                    var experimentBtn = document.getElementById(btnNext);
+                    experimentBtn.innerHTML = 'Next Task';
                 })
             });
         </script>
