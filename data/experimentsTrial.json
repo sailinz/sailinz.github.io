@@ -34,7 +34,7 @@
             "granularity": "paragraph",
             "articles":"multiple",
             "data_file": "data/dataFile/multiWin.json",
-            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective."
+            "stimuli": "What is ampere? Unit of electrical current. 12 is the number."
         },
         {
             "technique": "AUTOCOMPASTE",

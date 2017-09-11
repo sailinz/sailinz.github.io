@@ -46,21 +46,21 @@
             "technique": "AUTOCOMPASTE",
             "granularity": "paragraph",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin4",
+            "data_file": "data/dataFile/singleWin4.json",
             "stimuli": "What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification."
         },
         {
             "technique": "AUTOCOMPASTE",
             "granularity": "paragraph",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin5",
+            "data_file": "data/dataFile/singleWin5.json",
             "stimuli": "What is bistable multivibrator? A multi vibrator with two stable states. An external signal is required to change the output from one state to the other. Also called a latch."
         },
         {
             "technique": "AUTOCOMPASTE",
             "granularity": "paragraph",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin6",
+            "data_file": "data/dataFile/singleWin6.json",
             "stimuli": "In languages that employ articles, every common noun, with some exceptions, is expressed with a certain definiteness, just as many languages express every noun with a certain grammatical number. Every noun must be accompanied by the article, if any, corresponding to its definiteness, and the lack of an article (considered a zero article) itself specifies a certain definiteness. "
         },
         {
@@ -88,21 +88,21 @@
             "technique": "AUTOCOMPASTE",
             "granularity": "phrase",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin1",
+            "data_file": "data/dataFile/singleWin1.json",
             "stimuli": "accept free electrons"
         },
         {
             "technique": "AUTOCOMPASTE",
             "granularity": "phrase",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin2",
+            "data_file": "data/dataFile/singleWin2.json",
             "stimuli": "the polarity alternates"
         },
         {
             "technique": "AUTOCOMPASTE",
             "granularity": "phrase",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin3",
+            "data_file": "data/dataFile/singleWin3.json",
             "stimuli": "increases the voltage"
         },
         {
@@ -176,21 +176,21 @@
             "technique": "TRADITIONAL",
             "granularity": "paragraph",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin4",
+            "data_file": "data/dataFile/singleWin4.json",
             "stimuli": "What is average value? A value of voltage or current where the area of the wave above the value equals the area of the wave below the value."
         },
         {
             "technique": "TRADITIONAL",
             "granularity": "paragraph",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin5",
+            "data_file": "data/dataFile/singleWin5.json",
             "stimuli": "What is base biasing? A method of biasing a BJT in which the bias voltage is supplied to the base by means of a resistor."
         },
         {
             "technique": "TRADITIONAL",
             "granularity": "paragraph",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin6",
+            "data_file": "data/dataFile/singleWin6.json",
             "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')."
         },
         {
@@ -218,21 +218,21 @@
             "technique": "TRADITIONAL",
             "granularity": "phrase",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin1",
+            "data_file": "data/dataFile/singleWin1.json",
             "stimuli": "Trivalent atoms"
         },
         {
             "technique": "TRADITIONAL",
             "granularity": "phrase",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin2",
+            "data_file": "data/dataFile/singleWin2.json",
             "stimuli": "in one direction"
         },
         {
             "technique": "TRADITIONAL",
             "granularity": "phrase",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin3",
+            "data_file": "data/dataFile/singleWin3.json",
             "stimuli": "material of a diode"
         },
         {
