@@ -1,0 +1,262 @@
+{
+    "experiments": [
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "sentence",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin1.json",
+            "stimuli": "What is AC generator?"
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "sentence",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin2.json",
+            "stimuli": "What is alkaline cell?"
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "sentence",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin3.json",
+            "stimuli": "What is apparent power?"
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "sentence",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": "Frequencies above and below the pass band are heavily attenuated."
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "sentence",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": "Frequencies above and below the pass band are heavily attenuated."
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "sentence",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": "What is analog?"
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "paragraph",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin4",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "paragraph",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin5",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "paragraph",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin6",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "paragraph",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "paragraph",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "paragraph",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "phrase",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin1",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "phrase",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin2",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "phrase",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin3",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "phrase",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "phrase",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "phrase",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+
+
+
+
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin1.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin2.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin3.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin4",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin5",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin6",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "phrase",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin1",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "phrase",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin2",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "phrase",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin3",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "phrase",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "phrase",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "phrase",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        }
+
+
+    ]
+}

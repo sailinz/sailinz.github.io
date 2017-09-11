@@ -4,21 +4,21 @@
             "technique": "AUTOCOMPASTE",
             "granularity": "sentence",
             "articles":"single",
-            "data_file": "data/text1.json",
+            "data_file": "data/dataFile/singleWin1.json",
             "stimuli": "What is acceptor atoms?"
         },
         {
             "technique": "AUTOCOMPASTE",
             "granularity": "paragraph",
             "articles":"single",
-            "data_file": "data/text1.json",
+            "data_file": "data/dataFile/singleWin1.json",
             "stimuli": "What is AC coupling? Circuit that passes an AC signal while blocking a DC voltage."
         },
         {
             "technique": "AUTOCOMPASTE",
             "granularity": "phrase",
             "articles":"single",
-            "data_file": "data/text2.json",
+            "data_file": "data/dataFile/singleWin4.json",
             "stimuli": "number of positive charges"
         },
 
@@ -26,35 +26,35 @@
             "technique": "AUTOCOMPASTE",
             "granularity": "sentence",
             "articles":"multiple",
-            "data_file": "data/texts.json",
-            "stimuli": "What is acceptor atoms?"
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective."
         },
         {
             "technique": "AUTOCOMPASTE",
             "granularity": "paragraph",
             "articles":"multiple",
-            "data_file": "data/texts.json",
+            "data_file": "data/dataFile/multiWin.json",
             "stimuli": "What is AC coupling? Circuit that passes an AC signal while blocking a DC voltage."
         },
         {
             "technique": "AUTOCOMPASTE",
             "granularity": "phrase",
             "articles":"multiple",
-            "data_file": "data/texts.json",
+            "data_file": "data/dataFile/multiWin.json",
             "stimuli": "number of positive charges"
         },
         {
             "technique": "TRADITIONAL",
             "granularity": "sentence",
             "articles":"single",
-            "data_file": "data/text1.json",
+            "data_file": "data/dataFile/singleWin1.json",
             "stimuli": "What is acceptor atoms?"
         },
         {
             "technique": "TRADITIONAL",
             "granularity": "sentence",
             "articles":"multiple",
-            "data_file": "data/texts.json",
+            "data_file": "data/dataFile/multiWin.json",
             "stimuli": "What is acceptor atoms?"
         }
 

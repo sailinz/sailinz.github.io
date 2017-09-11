@@ -1,0 +1,95 @@
+{
+    "experiments": [
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "phrase",
+            "articles":"single",
+            "data_file": "data/dataFile/",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "phrase",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "sentence",
+            "articles":"single",
+            "data_file": "data/dataFile/",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "sentence",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "paragraph",
+            "articles":"single",
+            "data_file": "data/dataFile/",
+            "stimuli": ""
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "paragraph",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+
+
+
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "phrase",
+            "articles":"single",
+            "data_file": "data/dataFile/",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "phrase",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"single",
+            "data_file": "data/dataFile/",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": "What is acceptor atoms?"
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "articles":"single",
+            "data_file": "data/dataFile/",
+            "stimuli": ""
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": ""
+        }
+
+
+
+
+    ]
+}
