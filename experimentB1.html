@@ -33,7 +33,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
-                    <h1>Copy-Paste Experiment <b>(Trial)</b></h1>
+                    <h1>Copy-Paste Experiment <b>(Timed Block 1)</b></h1>
                     <hr>
                     <table class="table table-bordered">
                         <tbody>
@@ -85,7 +85,8 @@
                             'Trial no', 'Stimuli', 'User Response', 'Trial Start Time',
                             'Trial End Time', 'Trial Time', 'Accuracy'];
             var trialData = [];
-            var pid;
+            var pid = ACPToolKit.getCurrentParticipantId();
+            var testConditions = 'data/' + pid + '-B1.json';
 
             function next () {
                 if (currentTrial !== 0) {
@@ -115,19 +116,19 @@
                 } else {
                     // Last trial completed
                     ACPToolKit.downloadTrialResults(trialData);
-                    window.location = 'experimentB1.html';
+                    window.location = 'experimentB2.html';
                 }
             }
 
             $(document).ready(function () {
-                $.get('data/experimentsTrial.json', function (data) {
+                $.get(testConditions, function (data) {
                     trialsData = data.experiments;
                     currentTrial = 0;
                     totalNumberOfTrials = trialsData.length;
                     $('.js-expt-num-trials').text(totalNumberOfTrials);
                     trialData.push(headers);
                     next();
-                    pid = ACPToolKit.getCurrentParticipantId();
+                    //pid = ACPToolKit.getCurrentParticipantId();
                 })
             });
         </script>
