@@ -124,10 +124,8 @@
             "granularity": "phrase",
             "articles":"multiple",
             "data_file": "data/dataFile/multiWin.json",
-            "stimuli": "the most common words"
+            "stimuli": "a certain definiteness"
         },
-
-
 
 
         {
