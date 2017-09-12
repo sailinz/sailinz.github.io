@@ -124,7 +124,7 @@ No changes
 Path: `data/block1`.
 Arrangement for the 12*3 trails of block 1 for each participant
 
-Path: `data/block1`.
+Path: `data/block2`.
 Arrangement for the 12*3 trails of block 2 for each participant
 
 Path: `data/dataFile`.
