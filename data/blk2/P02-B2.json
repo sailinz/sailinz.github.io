@@ -2,52 +2,10 @@
     "experiments": [
         {
             "technique": "AUTOCOMPASTE",
-            "granularity": "sentence",
-            "articles":"single",
-            "data_file": "data/dataFile/singleWin1.json",
-            "stimuli": "What is AC generator?"
-        },
-        {
-            "technique": "AUTOCOMPASTE",
-            "granularity": "sentence",
-            "articles":"single",
-            "data_file": "data/dataFile/singleWin3.json",
-            "stimuli": "What is apparent power?"
-        },
-        {
-            "technique": "AUTOCOMPASTE",
-            "granularity": "sentence",
-            "articles":"single",
-            "data_file": "data/dataFile/singleWin2.json",
-            "stimuli": "What is alkaline cell?"
-        },
-        {
-            "technique": "AUTOCOMPASTE",
-            "granularity": "sentence",
-            "articles":"multiple",
-            "data_file": "data/dataFile/multiWin.json",
-            "stimuli": "Frequencies above and below the pass band are heavily attenuated."
-        },
-        {
-            "technique": "AUTOCOMPASTE",
-            "granularity": "sentence",
-            "articles":"multiple",
-            "data_file": "data/dataFile/multiWin.json",
-            "stimuli": "This is in contrast to other adjectives and determiners, which are typically optional."
-        },
-        {
-            "technique": "AUTOCOMPASTE",
-            "granularity": "sentence",
-            "articles":"multiple",
-            "data_file": "data/dataFile/multiWin.json",
-            "stimuli": "What is bipolar junction transistor?"
-        },
-        {
-            "technique": "AUTOCOMPASTE",
             "granularity": "paragraph",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin6.json",
-            "stimuli": "In languages that employ articles, every common noun, with some exceptions, is expressed with a certain definiteness, just as many languages express every noun with a certain grammatical number. Every noun must be accompanied by the article, if any, corresponding to its definiteness, and the lack of an article (considered a zero article) itself specifies a certain definiteness. "
+            "data_file": "data/dataFile/singleWin5.json",
+            "stimuli": "What is bistable multivibrator? A multi vibrator with two stable states. An external signal is required to change the output from one state to the other. Also called a latch."
         },
         {
             "technique": "AUTOCOMPASTE",
@@ -60,8 +18,8 @@
             "technique": "AUTOCOMPASTE",
             "granularity": "paragraph",
             "articles":"single",
-            "data_file": "data/dataFile/singleWin5.json",
-            "stimuli": "What is bistable multivibrator? A multi vibrator with two stable states. An external signal is required to change the output from one state to the other. Also called a latch."
+            "data_file": "data/dataFile/singleWin6.json",
+            "stimuli": "In languages that employ articles, every common noun, with some exceptions, is expressed with a certain definiteness, just as many languages express every noun with a certain grammatical number. Every noun must be accompanied by the article, if any, corresponding to its definiteness, and the lack of an article (considered a zero article) itself specifies a certain definiteness. "
         },
         {
             "technique": "AUTOCOMPASTE",
@@ -95,15 +53,22 @@
             "technique": "AUTOCOMPASTE",
             "granularity": "phrase",
             "articles":"single",
+            "data_file": "data/dataFile/singleWin3.json",
+            "stimuli": "increases the voltage"
+        },
+        {
+            "technique": "AUTOCOMPASTE",
+            "granularity": "phrase",
+            "articles":"single",
             "data_file": "data/dataFile/singleWin1.json",
             "stimuli": "accept free electrons"
         },
         {
             "technique": "AUTOCOMPASTE",
             "granularity": "phrase",
-            "articles":"single",
-            "data_file": "data/dataFile/singleWin3.json",
-            "stimuli": "increases the voltage"
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": "convert chemical energy to"
         },
         {
             "technique": "AUTOCOMPASTE",
@@ -121,62 +86,49 @@
         },
         {
             "technique": "AUTOCOMPASTE",
-            "granularity": "phrase",
-            "articles":"multiple",
-            "data_file": "data/dataFile/multiWin.json",
-            "stimuli": "convert chemical energy to"
-        },
-
-
-        {
-            "technique": "TRADITIONAL",
             "granularity": "sentence",
             "articles":"single",
             "data_file": "data/dataFile/singleWin2.json",
-            "stimuli": "What is alternator?"
+            "stimuli": "What is alkaline cell?"
         },
         {
-            "technique": "TRADITIONAL",
+            "technique": "AUTOCOMPASTE",
             "granularity": "sentence",
             "articles":"single",
             "data_file": "data/dataFile/singleWin1.json",
-            "stimuli": "Power supply that delivers an AC voltage."
+            "stimuli": "What is AC generator?"
         },
         {
-            "technique": "TRADITIONAL",
+            "technique": "AUTOCOMPASTE",
             "granularity": "sentence",
             "articles":"single",
             "data_file": "data/dataFile/singleWin3.json",
-            "stimuli": "Magnitude or size of a signal voltage or current."
+            "stimuli": "What is apparent power?"
         },
         {
-            "technique": "TRADITIONAL",
+            "technique": "AUTOCOMPASTE",
             "granularity": "sentence",
             "articles":"multiple",
             "data_file": "data/dataFile/multiWin.json",
-            "stimuli": "What is autotransformer?"
+            "stimuli": "What is bipolar junction transistor?"
         },
         {
-            "technique": "TRADITIONAL",
+            "technique": "AUTOCOMPASTE",
             "granularity": "sentence",
             "articles":"multiple",
             "data_file": "data/dataFile/multiWin.json",
-            "stimuli": "In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech."
+            "stimuli": "Frequencies above and below the pass band are heavily attenuated."
         },
         {
-            "technique": "TRADITIONAL",
+            "technique": "AUTOCOMPASTE",
             "granularity": "sentence",
             "articles":"multiple",
             "data_file": "data/dataFile/multiWin.json",
-            "stimuli": "What is battery?"
+            "stimuli": "This is in contrast to other adjectives and determiners, which are typically optional."
         },
-        {
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",
-            "articles":"single",
-            "data_file": "data/dataFile/singleWin5.json",
-            "stimuli": "What is base biasing? A method of biasing a BJT in which the bias voltage is supplied to the base by means of a resistor."
-        },
+
+
+
         {
             "technique": "TRADITIONAL",
             "granularity": "paragraph",
@@ -194,6 +146,13 @@
         {
             "technique": "TRADITIONAL",
             "granularity": "paragraph",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin5.json",
+            "stimuli": "What is base biasing? A method of biasing a BJT in which the bias voltage is supplied to the base by means of a resistor."
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
             "articles":"multiple",
             "data_file": "data/dataFile/multiWin.json",
             "stimuli": "What is ammeter? A meter used to measure current."
@@ -203,14 +162,14 @@
             "granularity": "paragraph",
             "articles":"multiple",
             "data_file": "data/dataFile/multiWin.json",
-            "stimuli": "What is armstrong oscillator? An oscillator that uses an isolation transformer to achieve positive feedback from output to input."
+            "stimuli": "What is active component? A component that changes the amplitude of a signal between input and output."
         },
         {
             "technique": "TRADITIONAL",
             "granularity": "paragraph",
             "articles":"multiple",
             "data_file": "data/dataFile/multiWin.json",
-            "stimuli": "What is active component? A component that changes the amplitude of a signal between input and output."
+            "stimuli": "What is armstrong oscillator? An oscillator that uses an isolation transformer to achieve positive feedback from output to input."
         },
         {
             "technique": "TRADITIONAL",
@@ -253,8 +212,49 @@
             "articles":"multiple",
             "data_file": "data/dataFile/multiWin.json",
             "stimuli": "obligatory nature of articles"
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin2.json",
+            "stimuli": "What is alternator?"
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin1.json",
+            "stimuli": "Power supply that delivers an AC voltage."
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"single",
+            "data_file": "data/dataFile/singleWin3.json",
+            "stimuli": "Magnitude or size of a signal voltage or current."
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": "What is battery?"
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": "In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech."
+        },
+        {
+            "technique": "TRADITIONAL",
+            "granularity": "sentence",
+            "articles":"multiple",
+            "data_file": "data/dataFile/multiWin.json",
+            "stimuli": "What is autotransformer?"
         }
-
 
     ]
 }
