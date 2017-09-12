@@ -101,16 +101,21 @@ Filename change:
 
 The experiments results will include the blk name.
 
+```
 module.downloadTrialResults = function (data, blk) {
     var pid = ACPToolKit.getCurrentParticipantId();
     arrayToCSV(data, 'acp-' + pid + '-blk-' + blk + '-trials');
 }
+```
 
 Add the third independent variable
+
+```
 $('.js-expt-technique').text(options.technique);
 $('.js-expt-granularity').text(options.granularity);
 $('.js-expt-articles').text(options.articles);
 $('.js-expt-stimuli').text(options.stimuli);
+```
 
 #### Data Object File
 Path: `data/articles`.
