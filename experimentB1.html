@@ -91,7 +91,7 @@
                             'Trial End Time', 'Trial Time', 'Accuracy'];
             var trialData = [];
             var pid = ACPToolKit.getCurrentParticipantId();
-            var testConditions = 'data/blk1/' + pid + '-B1.json';
+            var testConditions = 'data/block1/' + pid + '-B1.json';
 
             function next () {
                 if (currentTrial !== 0) {
@@ -120,7 +120,7 @@
                     $('.js-expt-current-trial').text(currentTrial);
                 } else {
                     // Last trial completed
-                    ACPToolKit.downloadTrialResults(trialData);
+                    ACPToolKit.downloadTrialResults(trialData,"1");
                     window.location = 'experimentBreak.html';
                 }
             }
