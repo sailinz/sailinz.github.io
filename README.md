@@ -67,7 +67,7 @@ This is the timed experiment of the first block. 12 conditions are assigned to e
 
 After completing this block, the data containing the conditions and results of the trials will be generated in the form of a CSV file, `acp-<pid>-blk1-trials.csv`.
 
-Path: `experimentBreak.html`.
+Path: `experimentBreak1.html`.
 
 A timer is set up to count down the 1 min break between the blocks.
 
@@ -76,6 +76,16 @@ Path: `experimentB2.html`.
 This session is similar to experimentB1.html. The conditions and corresponding trails are arranged in /data/block2/pid-B2.json for each participant. The only difference is that the trails for each condition is arranged differently. This is to test the learning effect of the techniques.
 
 After completing this block, the data containing the conditions and results of the trials will be generated in the form of a CSV file, `acp-<pid>-blk2-trials.csv`.
+
+Path: `experimentBreak2.html`.
+
+A timer is set up to count down the 1 min break between the blocks. Same as experimentBreak1.html
+
+Path: `experimentB3.html`.
+
+This session is similar to experimentB2.html. The conditions and corresponding trails are arranged in /data/block3/pid-B3.json for each participant. The only difference is that the trails for each condition is arranged differently. This is to test the learning effect of the techniques.
+
+After completing this block, the data containing the conditions and results of the trials will be generated in the form of a CSV file, `acp-<pid>-blk3-trials.csv`.
 
 
 #### Post-Experiment Questionnaire Screen
