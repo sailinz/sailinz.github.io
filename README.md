@@ -137,6 +137,9 @@ Arrangement for the 12*3 trails of block 1 for each participant
 Path: `data/block2`.
 Arrangement for the 12*3 trails of block 2 for each participant
 
+Path: `data/block3`.
+Arrangement for the 12*3 trails of block 3 for each participant
+
 Path: `data/dataFile`.
 multiWin: shows 6 windows of articles
 singleWin1-6: shows 1 window which contains 1 article
