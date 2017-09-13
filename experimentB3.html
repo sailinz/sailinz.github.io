@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <h1>Copy-Paste Experiment</h1>
-                    <h1><b>Timed Block 1</b></h1>
+                    <h1><b>Timed Block 2</b></h1>
                     <hr>
                     <table class="table table-bordered">
                         <tbody>
@@ -91,7 +91,7 @@
                             'Trial End Time', 'Trial Time', 'Accuracy'];
             var trialData = [];
             var pid = ACPToolKit.getCurrentParticipantId();
-            var testConditions = 'data/block1/' + pid + '-B1.json';
+            var testConditions = 'data/block3/' + pid + '-B3.json';
 
             function next () {
                 if (currentTrial !== 0) {
@@ -120,8 +120,8 @@
                     $('.js-expt-current-trial').text(currentTrial);
                 } else {
                     // Last trial completed
-                    ACPToolKit.downloadTrialResults(trialData,"1");
-                    window.location = 'experimentBreak1.html';
+                    ACPToolKit.downloadTrialResults(trialData,"3");
+                    window.location = 'questionnaire-post.html';
                 }
             }
 
