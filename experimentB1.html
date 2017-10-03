@@ -62,9 +62,10 @@
                     </table>
                     <p>Please copy-paste the following <span class="js-expt-granularity">phrase</span> using the <span class="js-expt-technique">AUTOCOMPASTE</span> technique from one of the open windows.</p>
                     <div id="stimuli" class="alert alert-danger js-expt-stimuli">This is a long stimuli!</div>
+                    <br/>
                     <form id="post-expt-form">
                         <div class="form-group">
-                            <label for="q1">How do you find using this copy-paste technique (1: Very difficult to use; 5: Very easy to use) *</label>
+                            <label for="q1">How do you find this copy-paste technique? <br/>(1: Very difficult to use; 5: Very easy to use) *</label>
                             <div class="radio" style="margin-bottom:0em;" required="required">
                               <label>
                                 <input type="radio" name="q1" id="optionsRadios1" value="1" required>
@@ -89,6 +90,7 @@
                             </div>
                         </div>
                     </form>
+                    <br/><br/>
                     <button class="btn btn-primary btn-lg" onclick="next()">Next Task</button>
                 </div>
                 <div id="autocompaste" class="col-sm-9">
@@ -145,6 +147,7 @@
                 if (currentTrial < totalNumberOfTrials) {
                     ACPToolKit.presentTrial(trialsData[currentTrial]);
                     currentTrial += 1;
+                    $('input[name=q1]').attr('checked',false); //clear Ease of Use selection for previous trail
                     $('.js-expt-current-trial').text(currentTrial);
                 } else {
                     // Last trial completed
