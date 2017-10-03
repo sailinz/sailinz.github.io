@@ -62,6 +62,33 @@
                     </table>
                     <p>Please copy-paste the following <span class="js-expt-granularity">phrase</span> using the <span class="js-expt-technique">AUTOCOMPASTE</span> technique from one of the open windows.</p>
                     <div id="stimuli" class="alert alert-danger js-expt-stimuli">This is a long stimuli!</div>
+                    <form id="post-expt-form">
+                        <div class="form-group">
+                            <label for="q1">How do you find using this copy-paste technique (1: Very difficult to use; 5: Very easy to use) *</label>
+                            <div class="radio" style="margin-bottom:0em;" required="required">
+                              <label>
+                                <input type="radio" name="q1" id="optionsRadios1" value="1" required>
+                                1
+                              </label>&nbsp;&nbsp;
+                              <label>
+                                <input type="radio" name="q1" id="optionsRadios2" value="2" required>
+                                2
+                              </label>&nbsp;&nbsp;
+                              <label>
+                                <input type="radio" name="q1" id="optionsRadios3" value="3" required>
+                                3
+                              </label>&nbsp;&nbsp;
+                              <label>
+                                <input type="radio" name="q1" id="optionsRadios4" value="4" required>
+                                4
+                              </label>&nbsp;&nbsp;
+                              <label>
+                                <input type="radio" name="q1" id="optionsRadios5" value="5" required>
+                                5
+                              </label>
+                            </div>
+                        </div>
+                    </form>
                     <button class="btn btn-primary btn-lg" onclick="next()">Next Task</button>
                 </div>
                 <div id="autocompaste" class="col-sm-9">
@@ -88,7 +115,7 @@
             var totalNumberOfTrials;
             var headers = ['Participant id', 'Technique', 'Granularity','Articles',
                             'Trial no', 'Stimuli', 'User Response', 'Trial Start Time',
-                            'Trial End Time', 'Trial Time', 'Accuracy'];
+                            'Trial End Time', 'Trial Time', 'Accuracy', 'Ease of Use'];
             var trialData = [];
             var pid = ACPToolKit.getCurrentParticipantId();
             var testConditions = 'data/block1/' + pid + '-B1.json';
@@ -96,7 +123,6 @@
             function next () {
                 if (currentTrial !== 0) {
                     var trialResult = ACPToolKit.getCurrentTrialState();
-
                     var technique = trialResult.technique;
                     var granularity = trialResult.granularity;
                     var articles = trialResult.articles; //3rd independent variable
@@ -107,10 +133,12 @@
                     var trialEndTime = trialResult.end_time;
                     var trialDuration = trialResult.duration;
                     var accuracy = stimuli === userResponse ? 1 : 0;
+                    //additional DV (subjective)
+                    var easeOfUse = document.querySelector('input[name="q1"]:checked').value;;
 
                     var row = [pid, technique, granularity, articles, trialNum,
                                 stimuli, userResponse, trialStartTime,
-                                trialEndTime, trialDuration, accuracy];
+                                trialEndTime, trialDuration, accuracy, easeOfUse];
                     trialData.push(row);
                 }
 
