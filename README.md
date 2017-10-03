@@ -55,7 +55,7 @@ This page will contain information regarding instructions on the experiment that
 
 #### Experiment Screen
 
-This screen consists 4 sessions - non-timed trail, timed block 1, break, timed block 2
+This screen consists 6 sessions - non-timed trail, timed block 1, break 1, timed block 2, break 2, timed block 3
 
 Path: `experiment.html`.
 
